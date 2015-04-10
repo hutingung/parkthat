@@ -1,0 +1,23 @@
+        <div class="modal">
+            <!-- Modal header bar -->
+            <ion-header-bar class="bar-secondary">
+              <h2 class="title">Activate</h2>
+            </ion-header-bar>
+            <!-- Modal content area -->
+            <ion-content>
+              <form ng-submit="activate()">
+                <div class="list">
+                  <label class="item item-input">
+                    <input type="text" placeholder="Activation Code" ng-model="activateClientRequest.activationCode" ng-required="true">
+                  </label>
+                  <label class="item item-input">
+                    <i class="icon ion-android-call placeholder-icon"></i>
+                    <span>{{activateClientRequest.phoneNo}}</span>
+                  </label>
+                </div>
+                <div class="padding">
+                  <button type="submit" class="button button-block button-positive">Activate Now</button>
+                </div>
+              </form>
+            </ion-content>
+          </div>

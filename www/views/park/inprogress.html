@@ -1,0 +1,17 @@
+              <h3><timer interval="1000">{{hours}} hour{{hoursS}}, {{minutes}} minute{{minutesS}}, {{seconds}} second{{secondsS}}.</timer></h3>
+              <form ng-submit="completePark(park)">
+                <div class="list">
+                  <label class="item item-input">
+                    <input type="text" placeholder="Plate No" ng-model="park.plateNo" ng-disabled="true">
+                  </label>
+                </div>
+                <div class="list">
+                  <label class="item item-input">
+                    <span>Charges: {{park.charges | currency:"MYR":2}}</span>
+                  </label>
+                </div>
+                <div class="padding">
+                  <button type="submit" class="button button-block button-positive">Done</button>
+                </div>
+              </form>
+              <ion-nav-view></ion-nav-view>

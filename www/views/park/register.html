@@ -1,0 +1,31 @@
+        <div class="modal">
+
+            <!-- Modal header bar -->
+            <ion-header-bar class="bar-secondary">
+              <h2 class="title">Register</h2>
+            </ion-header-bar>
+            <!-- Modal content area -->
+            <ion-content>
+              <form ng-submit="register()">
+                <div class="list">
+                  <label class="item item-input">
+                    <i class="icon ion-person placeholder-icon"></i>
+                    <input type="text" placeholder="Username" ng-model="registerClientRequest.username" ng-required="true">
+                  </label>
+                  <label class="item item-input">
+                    <i class="icon ion-email placeholder-icon"></i>
+                    <input type="text" placeholder="email" ng-model="registerClientRequest.email" ng-required="true">
+                  </label>
+                  <label class="item item-input">
+                    <i class="icon ion-android-call placeholder-icon"></i>
+                    <span>({{registerClientRequest.countryCode}})&nbsp;</span>
+                    <input type="text" placeholder="Phone No" ng-model="registerClientRequest.phoneNo" ng-required="true">
+                  </label>
+                </div>
+                <div class="padding">
+                    <h5>By registering, I have read and agreed to the Terms of Use and the Privacy Policy.</h5>
+                  <button type="submit" class="button button-block button-positive">Register Now</button>
+                </div>
+              </form>
+            </ion-content>
+          </div>
